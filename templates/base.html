@@ -1,0 +1,67 @@
+{{define "head"}}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/main.css">
+{{end}}
+
+{{define "navbar"}}
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed;z-index:999;width: 100%;">
+  <a class="navbar-brand" href="/">V2UI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="buile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          关于
+        </a>
+        <div class="dropdown-menu" aria-labelledby="buile">
+          <a  class="dropdown-item" href="https://github.com/zhangguojvn/v2ui">项目地址</a>
+        </div>
+      </li>
+  </ul>
+</div>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" href="/">V2UI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+{{end}}
+
+{{define "footer"}}
+<script 
+  src="https://code.jquery.com/jquery-3.4.1.min.js" 
+  crossorigin="anonymous"></script>
+<script 
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+  crossorigin="anonymous"></script>
+<script 
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+  crossorigin="anonymous"></script>
+<script src="/assets/js/main.js"></script>
+{{end}}
+
+{{define "buttonAdd"}}
+<div class="btn-group dropup">
+<button type="button" name="buttonRun" class="btn btn-primary rounded-circle btn-sm" id="buttonRun"
+  style="right:10%;top:90%;position:fixed;z-index:999;width:4em;height:4em" 
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+  <svg xmlns='http://www.w3.org/2000/svg' width='2.5em' height='2.5em' viewBox='0 0 512 512'>
+    <line x1='256' y1='112' x2='256' y2='400'
+      style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+    <line x1='400' y1='256' x2='112' y2='256'
+      style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px' />
+  </svg></button>
+  <div class="dropdown-menu" id="dropdownMenu">
+  </div>
+</div>
+{{end}}
